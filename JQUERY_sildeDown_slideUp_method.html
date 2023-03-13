@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_slideDown_slideUp_slideToggle-methods</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+       
+        #box{
+            
+            padding: 10px;
+            border: 1px solid black;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_slideDown_slideUp_slideToggle-methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum <span> dolor sit amet consectetur</span> adipisicing elit. Eaque, laborum?</p>
+    </div>
+    <br>
+     <button id="slideUpBtn">SlideUp</button>
+     <button id="slideDownBtn">SlideDown</button>
+     <button id="slideToggleBtn">SlideToggle</button>
+    
+    <script>
+        $(document).ready(function(){
+       
+         $('#slideUpBtn').click(function(){
+            $('#box').slideUp(function(){
+                    console.log("This is slideUp");
+                });
+            });
+         $('#slideDownBtn').click(function(){
+            $('#box').slideDown();
+         });
+
+         $('#slideToggleBtn').click(function(){
+            $('#box').slideToggle();
+         });
+        });
+        
+    </script>
+</body>
+</html>

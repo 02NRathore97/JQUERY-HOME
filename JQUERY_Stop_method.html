@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Stop_methods</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+       
+        #box{
+            
+            padding: 10px;
+            border: 1px solid black;
+            background: green;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_Stop_methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum <span> dolor sit amet consectetur</span> adipisicing elit. Eaque, laborum?</p>
+    </div>
+    <br>
+     <button id="animateBtn">Animate</button>
+     <button id="stopBtn">Stop</button>
+    
+    
+    <script>
+        $(document).ready(function(){
+       
+         $('#animateBtn').click(function(){
+             $('#box').animate({left : '150px' }, 3000);
+             });
+             $('#stopBtn').click(function(){
+                $('#box').stop();
+             });
+    });
+        
+    </script>
+</body>
+</html>

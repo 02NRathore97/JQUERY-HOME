@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Method_Chaining</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+       
+        #box{
+            
+            padding: 10px;
+            border: 1px solid black;
+            background: green;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_Method_Chaining</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum <span> dolor sit amet consectetur</span> adipisicing elit. Eaque, laborum?</p>
+    </div>
+    <br>
+     <button id="animateBtn">Animate</button>
+     <script>
+        $(document).ready(function(){
+       
+         $('#animateBtn').click(function(){
+             $('#box').css('background','pink').slideUp().slideDown();
+             });
+    });
+        
+    </script>
+</body>
+</html>

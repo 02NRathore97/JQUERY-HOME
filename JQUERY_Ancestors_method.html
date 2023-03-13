@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Ancestors_methods</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+         div{
+            padding: 15px;
+            border: 1px solid black;
+            background: green;
+        }
+        #main-outer{
+            background: plum;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        #outer{
+            background: orange;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        #inner{
+            background: pink;
+            border: 1px solid black;
+            padding: 15px;
+        }
+       
+    </style>
+</head>
+<body>
+   <div id="main-outer">
+        <h2>Main Outer</h2>
+            <div id="outer">
+                <h2>Outer</h2>
+
+                    <div id="inner">
+                        <h2 id="child-head">Inner</h2>
+                            <div>A</div>
+                            <div>B</div>
+                            <div id="child-c">C</div>
+                            <div>D</div>
+                    </div>
+            </div>
+         </div>
+    <script>
+        $(document).ready(function(){
+           // $('#child-c').parent().css('background','red');
+
+           // $('#child-c').parents().css('background','red');
+
+           // $('#child-c').parentsUntil('#main-outer').css('background','red');
+           
+          // $('#child-c').offsetParent().css('background','red');
+          
+          $('#child-c').closest('div').css('background','red');
+        
+    });
+        
+    </script>
+</body>
+</html>

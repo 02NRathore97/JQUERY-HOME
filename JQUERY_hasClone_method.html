@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_hasclass-methods</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+       
+        #box{
+            
+            padding: 10px;
+            border: 1px solid black;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_hasclass-methods</h1>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laborum?</p>
+    </div>
+    <br>
+     <button id="hasClassBtn">HasClass</button>
+    <script>
+        $(document).ready(function(){
+          $('#hasClassBtn').click(function(){
+           var a =  $('#box').hasClass('test');
+           console.log(a);
+
+           var b =  $('#box').hasClass('abc');
+           console.log(b);
+          });
+         });
+    </script>
+</body>
+</html>

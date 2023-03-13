@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_hide & show-methods</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+       
+        #box{
+            
+            padding: 10px;
+            border: 1px solid black;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_hide & show-methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laborum?</p>
+    </div>
+    <br>
+     <button id="hideBtn">HideClass</button>
+     <button id="showBtn">ShowClass</button>
+     <button id="toggleBtn">ToggleClass</button>
+    <script>
+        $(document).ready(function(){
+        //   $('#hideBtn').click(function(){
+        //     $('#box').hide("slow");
+        //  });
+
+        // $('#showBtn').click(function(){
+        //     $('#box').show("fast");
+        //  });
+
+        // $('#hideBtn').click(function(){
+        //     $('#box').hide(function(){
+        //         console.log("Now it is hidden");
+        //     });
+        //  });
+
+         $('#hideBtn').click(function(){
+            $('#box').hide();
+            });
+       
+
+         $('#showBtn').click(function(){
+            $('#box').show();
+         });
+
+         $('#toggleBtn').click(function(){
+            $('#box').toggle();
+         });
+        });
+        
+    </script>
+</body>
+</html>

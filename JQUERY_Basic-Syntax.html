@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQUERY_Basic-Syntax</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        #test1{
+            background-color: red;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        #test2{
+            background-color: yellow;
+            padding: 15px;
+        }
+
+    </style>
+     <script>
+        $(document).ready(function(){
+            console.log("Hello");
+
+            var a= $('#test1').html();
+            console.log(a);
+        });
+
+        $(function(){
+            var a = $('#test1').html();
+            var b = $('#test2').html();
+            console.log(a);
+            console.log(b);
+        });
+    </script>
+</head>
+<body>
+    <div id="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consectetur.</p>
+    </div>
+    <div id="test2">
+        <h2>Test Box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consectetur.</p>
+    </div>
+
+   
+</body>
+</html>

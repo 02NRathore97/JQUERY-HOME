@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Event.StopPropagation_Property</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+     <style>
+        #box{
+              background-color: yellowgreen;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+   <h1>JQUERY_Event.StopPropagation_Property</h1>
+
+   
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet?</p>
+        <button>Test Button</button>
+    </div>
+    <br>
+   <h3></h3>
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                alert("The div element is clicked")
+            });
+
+            $('h2').click(function(){
+                alert("The h2 element is clicked")
+            });
+
+            $('p').click(function(event){
+                event.stopPropagation();
+                alert("The p element is clicked");
+                var a = event.isPropagationStopped();                //it will return true or false
+                $('h3').html(a);  
+            });
+
+            $('button').click(function(){
+                alert("The button element is clicked")
+            });
+          });
+         </script>
+</body>
+</html>

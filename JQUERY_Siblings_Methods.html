@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Sibling_methods</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+         div{
+            padding: 15px;
+            border: 1px solid black;
+            background: green;
+        }
+        
+        #outer{
+            background: orange;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        #inner{
+            background: pink;
+            border: 1px solid black;
+            padding: 15px;
+        }
+       
+    </style>
+</head>
+<body>
+
+            <div id="outer">
+                <h2>Outer</h2>
+
+                    <div id="inner">
+                            <h2>Inner</h2>
+                            <div class="test">A</div>
+                            <div>B</div>
+                            <div id="child-c">C</div>
+                            <div>D</div>
+                            <div class="test">E</div>
+                    </div>
+            </div>
+        
+    <script>
+        $(document).ready(function(){
+            // $('#child-c').siblings().css('background','red');            //all siblings of c
+            // $('#child-c').siblings('h2').css('background','red');        //all h2 tags that are siblings of c
+            // $('#child-c').siblings('.test').css('background','red');     //all siblings of c that have class test
+
+            // $('#child-c').prev().css('background','red');         //previous siblings of c
+            // $('#child-c').prevAll().css('background','red');      //All previous siblings of c
+            
+           // $('#child-c').next().css('background','red');           //Next siblings of c
+           // $('#child-c').nextAll().css('background','red');           //All Next siblings of c
+          
+           // $('#child-c').nextUntil('.test').css('background','red');           //All next sibling of c till the class test
+           // $('#child-c').nextUntil('.test').css('background','red');           //All previous sibling of c till the class test
+
+           
+        
+    });
+        
+    </script>
+</body>
+</html>

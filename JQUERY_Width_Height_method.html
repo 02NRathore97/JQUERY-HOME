@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQUERY_Width_Height-method</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        #box{
+            padding: 30px;
+            margin: 20px;
+            border: 10px solid black;
+            background-color: green;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>JQUERY_Width_Height-method</h1>
+    <div id="box">
+        <h2>Test Box </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consectetur.</p>
+    </div>
+    <button id="widthBtn">Width</button>
+    <button id="hieghtBtn">Height</button>
+   <script>
+        $(document).ready(function(){
+            $('#widthBtn').click(function(){
+                $('#box').width("400px");
+
+                 console.log("width : " + $('#box').width());
+                 console.log("InnerWidth : " + $('#box').innerWidth());
+                 console.log("OuterWidth : " + $('#box').outerWidth());
+                 console.log("OuterWidth(true) : " + $('#box').outerWidth(true));
+            });
+            $('#hieghtBtn').click(function(){
+                $('#box').height("400px");
+                console.log("height : " + $('#box').height());
+                 console.log("InnerHeight : " + $('#box').innerHeight());
+                 console.log("OuterHeight : " + $('#box').outerHeight());
+                 console.log("OuterHeight(true) : " + $('#box').outerHeight(true));
+            });
+        });
+        
+   </script>
+</body>
+</html>

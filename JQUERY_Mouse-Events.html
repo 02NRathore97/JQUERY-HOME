@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Mouse-Events</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        #box{
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_Mouse-Events</h1>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laborum?</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+              $('#box').css('background-color','green');
+
+            //  var a = $('#box').html();
+            //  console.log(a);
+            });
+           
+            $('#box').dblclick(function(){
+              $('#box').css('background-color','orange');
+            });
+
+             
+            $('#box').contextmenu(function(){
+              $('#box').css('background-color','blue');
+            });
+
+              
+            $('#box').mouseenter(function(){
+              $('#box').css('background-color','brown');
+            });
+
+              
+            $('#box').mouseleave(function(){
+              $('#box').css('background-color','red');
+            });
+        });
+    </script>
+</body>
+</html>

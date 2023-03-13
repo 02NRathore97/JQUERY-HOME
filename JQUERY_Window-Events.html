@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Window-Events</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        #box{
+            width: 70%;
+            height: 200px;
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid black;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY_Window-Events</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique accusamus soluta eos sunt nesciunt itaque illum, alias quas nam aspernatur asperiores numquam quia? Recusandae doloremque consequatur culpa earum iusto quaerat dignissimos exercitationem facilis? Velit quidem incidunt voluptas consequuntur animi nisi dolore necessitatibus, repudiandae autem veritatis molestias, molestiae est excepturi sunt dolorum nostrum accusantium. Accusantium laboriosam id iusto, tenetur vero maxime commodi quaerat molestias, temporibus consectetur debitis! Fuga blanditiis sapiente fugit. Quaerat perspiciatis, delectus reiciendis expedita nobis similique architecto impedit cum cupiditate a odit iure itaque adipisci cumque mollitia atque ipsa ipsum ex repudiandae dolorem fugit, iusto sequi quis distinctio! Cumque!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam similique, inventore dolorem dolor repellat illum voluptatibus deleniti deserunt distinctio asperiores cum iste nesciunt omnis molestiae officia amet, iusto ea consequatur dignissimos praesentium explicabo at! Numquam aliquid inventore ratione quidem a sunt cum blanditiis quas nam exercitationem iste, enim, at in nostrum aspernatur, rem necessitatibus possimus natus. Ipsa perferendis et tempore laboriosam porro molestiae optio architecto? Voluptatum placeat possimus quisquam non vero minima facere porro tempora quam? Officiis quasi minima hic similique ea! Maxime ducimus earum voluptatem exercitationem recusandae inventore praesentium eius, perferendis minima nostrum odit veritatis quae quis sunt cum incidunt odio voluptatum itaque fuga officiis natus nihil saepe quisquam dolorum. Atque, nam quaerat vitae aliquid nemo asperiores? Repellat tempore eum alias necessitatibus vitae nam. Tempora dicta tempore eos maiores doloremque perferendis laudantium consequuntur magnam praesentium exercitationem. Impedit dicta, reprehenderit, ratione, mollitia dignissimos eum eos alias soluta sunt tempora explicabo debitis inventore. In, consequuntur. Suscipit, asperiores dolor? Non vero exercitationem eum fugit quisquam officiis. Facere voluptatibus minus quia, excepturi sapiente, consectetur, quibusdam nemo obcaecati nostrum tempora dolorem fuga molestias id! Quasi omnis nobis itaque commodi tempora perferendis consequuntur blanditiis, ea repellat excepturi hic quo vel ut dignissimos. Facilis corrupti ad maiores optio error blanditiis voluptate dolorem similique numquam, velit reiciendis nobis suscipit quo fugit odio doloremque nesciunt. Accusantium, laudantium sapiente maiores corrupti magni nihil praesentium totam amet nam voluptatum eligendi cum ut sunt quod ex incidunt, expedita velit quia, neque enim architecto cumque modi perferendis quas. Libero hic fuga facere exercitationem alias magnam suscipit aliquam omnis dolor saepe a recusandae ea possimus ipsum, quibusdam dolore consequuntur fugit iste rerum earum itaque error magni. Sunt, beatae repellendus. Incidunt aut, dolor ad provident nemo consequuntur praesentium dicta fuga, iusto saepe quidem accusamus maiores veniam, mollitia corporis eos. Quaerat reiciendis officiis doloribus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nostrum, molestias accusamus totam illum quo reiciendis, sint, cumque dolorem repellendus quod temporibus perspiciatis at commodi impedit autem. Tempore dignissimos voluptas doloremque neque, sunt, sit iste provident eaque doloribus possimus, adipisci ad rem laborum. Nulla deleniti ipsa corrupti. Non beatae velit quisquam temporibus porro hic expedita suscipit deserunt, dolore excepturi, quos esse perferendis accusantium vero enim! Quos aperiam aspernatur exercitationem quasi vero nobis quas facilis iure. Sit quasi facere ipsa, atque nihil, fuga cumque quos assumenda blanditiis repudiandae veritatis repellat architecto provident aliquid eveniet fugit libero nesciunt nulla sunt qui praesentium! Magnam reprehenderit impedit, quas aliquid quia fuga natus, deleniti iure perferendis nesciunt repudiandae in rerum sit. Reprehenderit nam id eaque rem, vitae harum? Itaque distinctio animi perferendis. Adipisci consequatur, praesentium nesciunt eaque temporibus corporis, dignissimos quia vel delectus natus, itaque eos qui facere earum explicabo ipsam voluptatum repellendus id ea!</p>
+
+    <script>
+        $(document).ready(function(){
+           $(window).scroll(function(){
+            console.log("Window Scrolling")
+            });
+            $('#box').scroll(function(){
+            console.log("box Scrolling")
+            });
+
+            
+            $(window).resize(function(){
+            console.log("You are resizing")
+            });
+        });
+    </script>
+</body>
+</html>

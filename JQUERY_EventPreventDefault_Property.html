@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>JQUERY_Event.PreventDefault_Property</title>
+     <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        #box{
+              background-color: yellowgreen;
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+   <h1>JQUERY_Event.PreventDefault_Property</h1>
+
+   
+    <div id="box">
+       <a href="https://www.youtube.com/" id="result">YouTube With PreventDefault</a>
+        <br> <br>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <br><br><br><br><br>
+        <h2></h2>
+    <script>
+        $(document).ready(function(){
+            $('#result').click(function(event){
+                event.preventDefault();
+
+
+                var a = event.isDefaultPrevented();
+                $('h2').html(a);                                //it will return true or false
+            })
+        });
+            
+        
+    </script>
+</body>
+</html>
